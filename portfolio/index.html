@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Josefin Sans';
+        }
+
+        body {
+            font-family: 'Josefin Sans';
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+            background-color: black;
+        }
+
+        nav {
+            height: 14vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+        }
+
+        .logo {
+            padding: 5vh 0 0 5vw;
+            letter-spacing: 1px;
+            color: whitesmoke;
+            fill: currentColor;
+            font-size: 1.8rem;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        span {
+            color: rgb(229, 9, 20);
+            fill: currentColor;
+        }
+
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 5vh 5vw 0 0;
+
+        }
+
+        .head {
+
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: rgb(229, 9, 20);
+        }
+
+        a:hover {
+            font-weight: bolder;
+            color: whitesmoke;
+        }
+
+        .container {
+
+            background-color: black;
+
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 1vw;
+            row-gap: 5vh;
+        }
+
+        .tagline {
+            /* font-size: 1.5rem; */
+            color: white;
+            height: 50vh;
+            background-color: black;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .line1 {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .line2 {
+            font-size: 4rem;
+        }
+
+        .line3 {
+            font-size: 1.5rem;
+        }
+
+        #element {
+            color: whitesmoke;
+        }
+
+        #icons {
+            height: 20vh;
+            background-color: black;
+            display: flex;
+            column-gap: 1vw;
+        }
+
+        .rightsection {
+            height: 60vh;
+            width: 40vw;
+            background-color: black;
+            background-image: url(oi.jpg);
+            background-repeat: no-repeat;
+            background-size: 43vw;
+            border: 1px solid whitesmoke;
+        }
+
+
+        .contact {
+            font-size: 2rem;
+            color: whitesmoke;
+            padding: 4vh 0 0 5vw;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+            margin: 3.2vh 0 4vh 2vw;
+
+        }
+
+        .content a {
+            border-radius: 50px;
+            column-width: 3.3vw;
+            height: 6.5vh;
+            background-color: white;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .fb {
+            color: #1c1e21;
+        }
+
+        .insta {
+            color: rgb(229, 9, 20);
+        }
+
+        a.linkedin {
+            background-color: #0d266b;
+            color: white;
+        }
+
+        a.wp {
+            background-color: rgb(20, 230, 20);
+            color: whitesmoke;
+        }
+
+        a:hover {
+            background-color: black;
+            font-weight: bolder;
+        }
+
+        #about {
+            height: 40vh;
+            background-color: black;
+
+        }
+
+        .abtheading {
+            font-size: 2rem;
+            color: whitesmoke;
+            padding: 4vh 0 0 5vw;
+            font-weight: 900;
+            cursor: pointer;
+            text-align: center;
+            margin: 25px 80px 25px 0;
+
+        }
+
+        .abtcontent {
+            color: white;
+            font-weight: 200;
+            font-size: smaller;
+        }
+
+        .para {
+            width: 25vw;
+            height: 40vh;
+            background-color: black;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 2px 2px 5px 4px grey, -2px -2px 5px 4px grey;
+            border: 2px solid whitesmoke;
+        }
+
+        .education {
+            display: flex;
+            flex-direction: row;
+            column-gap: 2.5vw;
+            color: white;
+            margin: 4vh 0 0 0;
+            height: 40vh;
+        }
+
+        .educationhead {
+            font-size: 2rem;
+            color: white;
+            margin: 40vh 0 5vh 2vw;
+        }
+
+        .secondary {
+            width: 30vw;
+            height: 38vh;
+            border: 2px solid whitesmoke;
+            margin: 0 0 0 2vw;
+            box-shadow: 2px 2px 5px 6px grey, -2px -2px 5px 6px grey;
+        }
+
+        .highersecondary {
+            width: 30vw;
+            height: 38vh;
+            border: 2px solid whitesmoke;
+            box-shadow: 2px 2px 5px 6px grey, -2px -2px 5px 6px grey;
+        }
+
+        .btech {
+            width: 30vw;
+            height: 38vh;
+            border: 2px solid whitesmoke;
+            box-shadow: 2px 2px 5px 6px grey, -2px -2px 5px 6px grey;
+        }
+
+
+        h5 {
+            padding: 15px 20px;
+        }
+
+        .educontent li {
+            font-size: smaller;
+            list-style: inside;
+            padding: 10px 0 0 20px;
+            color: rgb(229, 9, 20);
+
+        }
+
+        .education ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">PORTFO<span>LIO</span> </h2>
+            <ul>
+                <li><a class="head" href="#about">About me</a></li>
+                <li><a class=" head" href="#icons">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tagline">
+                <p class="line1">Hello, my name is </p>
+                <p class="line2">Akarsh <span class="title">Chandran</span></p>
+                <p class="line3"> <span id="element">I'm a Web Developer</span></p>
+            </div>
+            <div class="rightsection">
+                <img src="WEEEB.jpg" width="615" height="438">
+            </div>
+            <div id="icons">
+                <p class="contact">Con<span>tact</span>:</p>
+                <div class="content">
+                    <a class="fb" href="#"
+                        target="_blank">
+                        <i class="fa-brands fa-2x fa-facebook"></i>
+                    </a>
+                    <a class="insta" href="#">
+                        <i class="fa-brands fa-2x fa-instagram"></i>
+                    </a>
+                    <a class="linkedin" href="#">
+                        <i class="fa-brands fa-2x fa-linkedin-in"></i>
+                    </a>
+                    <a class="wp" href="#">
+                        <i class="fa-brands fa-2x fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <p class="abtheading">About <span>Me</span>:</p>
+            <div class="para">
+                <p class="abtcontent">I am a passionate front-end web developer.I can provide clean code and pixel
+                    perfect website I am a quick learner.I have that ability to process,understand and memorize new
+                    information.I have good communication skills.I am a team player and I know how to coordinate with
+                    the team members if I have been allotted with a team project.</p>
+            </div>
+
+        </div>
+        <p class="educationhead">Educational <span>Qualifications</span>:</p>
+        <div class="education">
+            <div class="secondary">
+                <h5>Secondary Education</h5>
+                <div class="educontent">
+                    <ul>
+                        <li>AMRITA VIDYALAYAM</li>
+                        <li>CBSE </li>
+                        <li>Secured 90%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highersecondary">
+                <h5>Higher Secondary </h5>
+                <div class="educontent">
+                    <ul>
+                        <li>AMRITA VIDYALAYAM</li>
+                        <li>CBSE </li>
+                        <li>Secured 93%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btech">
+                <h5>Bachelor Degree(B.Tech)</h5>
+                <div class="educontent">
+                    <ul>
+                        <li>Budge Budge Institute of Technology.</li>
+                        <li>Makaut University </li>
+                        <li>First Year- 9.9 YGPA</li>
+                        <li>Second Year- 8.72 YGPA</li>
+                        <li>Currently in 3rd year.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </main>
+    <footer>
+        Lorem ipsum dolor sit amet.
+    </footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['I am a Web Developer.'],
+        typeSpeed: 90,
+    });
+</script>
+
+</html>
